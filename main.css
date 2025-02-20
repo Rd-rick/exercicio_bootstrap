@@ -1,0 +1,162 @@
+.container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+
+.container-fora {
+    display: flex;
+    width: 36rem;
+    height: 28rem;
+    background-color: #fff;
+    align-items: flex-start;
+    position: relative;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    animation: piscar 0.9s infinite alternate;
+}
+
+@keyframes piscar {
+    0% {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    }
+}
+
+.container-fora #carta {
+    width: 19rem;
+    position: absolute;
+    left: 9.5rem;
+    top: -6rem;
+}
+
+.container-fora #tres-pontos {
+    width: 5rem;
+    padding-left: 1.5rem;
+}
+
+form .container-2 {
+    width: 83%;
+    height: 82%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    justify-content: center;
+    border-radius: 6px;
+    position: absolute;
+    left: 3.1rem;
+    bottom: -4rem;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s ease;
+}
+
+.container-2:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+form h2 {
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+form input, form button {
+    width: 60%;
+    height: 2rem;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+form button {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.botao button {
+    width: 100%;
+    background-color: #376cf8;
+    border: none;
+    color: #fff;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.botao button:hover {
+    background-color: #3f69dd;
+}
+
+form .form-label {
+    font-size: 18px;
+    margin-top: 0.8rem;
+    margin-bottom: 0.2rem;
+    color: black;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .container {
+        transform: scale(1.2);
+        width: 90%;
+        height: 95vh;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 100%;
+        width: 95%;
+        padding: 0 0.5rem 0 0.4rem;
+    }
+
+    .container-fora {
+        width: 100%;
+        position: relative;
+    }
+
+    .container #tres-pontos {
+        width: 3.5rem;
+        padding-top: 1rem;
+    }
+
+    .container #carta {
+        width: 15rem;
+        left: 4.3rem;
+        top: -4.5rem;
+    }
+
+    form .container-2 {
+        width: 88%;
+        position: absolute;
+        left: 1.3rem;
+        bottom: -2.5rem;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        text-align: center;
+        padding: 0 1.3rem 0 1rem;
+    }
+}
